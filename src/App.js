@@ -13,12 +13,12 @@ function App() {
           <Nav className="Navigation">
             <Nav.Link className="Nav-link" href="#home">Home</Nav.Link>
             <Nav.Link className="Nav-link" href="#about">About</Nav.Link>
-            <Nav.Link className="Nav-link" href="#projects">Experience/Projects?</Nav.Link>
+            <Nav.Link className="Nav-link" href="#projects">Experience</Nav.Link>
             <Nav.Link className="Nav-link" href="#contact">Contact</Nav.Link>
-            <Nav.Link className="Nav-link" href="#links">Links?</Nav.Link>
+            <Nav.Link className="Nav-link" href="#links">Links</Nav.Link>
             {/*Last ones are separate from rest*/}
-            <Nav.Link className="Nav-link" href="#dev-info">About this page</Nav.Link>
-            <Nav.Link className="Nav-link" href="#accessibility">Accessibility</Nav.Link>
+            <Nav.Link className="Nav-link last" href="#dev-info">About this website</Nav.Link>
+            <Nav.Link className="Nav-link last" href="#accessibility">Accessibility</Nav.Link>
           </Nav>
         </Navbar>
       </header>
