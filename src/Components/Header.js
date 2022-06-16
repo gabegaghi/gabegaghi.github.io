@@ -1,19 +1,16 @@
 import logo from './logo.svg';
 import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import './App.css';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("/home");
 
   const selectNavigation = (curr) => {
     setSelectedPage(curr);
-    
   }
 
   return (
-    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
         <Navbar className="Nav-bar" fixed='top'>
@@ -29,7 +26,6 @@ function App() {
           </Nav>
         </Navbar>
       </header>
-    </div>
   );
 }
 
