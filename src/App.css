@@ -4,13 +4,13 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin linear infinite 2s alternate;
   }
 }
 
@@ -40,17 +40,16 @@
   color: #ffffff;
 }
 
-.last {
+.Nav-link:last-child {
   color: #bfbfbf;
-  font-size: 0.8rem;
   justify-content: right;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(-15deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(20deg);
   }
 }
