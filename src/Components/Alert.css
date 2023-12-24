@@ -1,0 +1,31 @@
+.alert {
+    background-color: rgb(255, 228, 205);
+    border: solid rgb(255, 135, 0) 5px;
+    border-radius: 25px;
+    max-width: 800px;
+    padding: 0rem 1.5rem;
+    margin-bottom: 2.5vh;
+}
+
+.full {
+    padding-top: .5rem;
+}
+
+.alert-title {
+    color: rgb(255, 106, 0);
+    margin: 1rem 0rem .5rem;
+}
+
+.redirect-text {
+    margin-top: .5rem;
+}
+
+.upcoming-list {
+    text-align: left;
+    margin: 1.5rem 0rem;
+}
+
+.upcoming-title {
+    margin: .5rem 0rem;
+    color: brown;
+}
