@@ -1,0 +1,101 @@
+.proj-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.proj-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh 6vw 6vh;
+    margin-bottom: 5vh;
+    background-image: url('../assets/cloud.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+.proj-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60%;
+}
+
+.proj-title {
+    margin: 1vh 1vw;
+}
+
+.proj-subheading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-size: 1.15rem;
+}
+
+.proj-date {
+    margin: 0;
+    background-color: powderblue;
+    border-radius: 25px;
+    padding: .25rem 1rem;
+}
+
+.under {
+    margin-left: 2vw;
+    background-color: rgb(174, 232, 218);
+    border-radius: 25px;
+    padding: .25rem 1rem;
+}
+
+.proj-body {
+    display: flex;
+}
+
+.logo {
+    padding: 0vh 1.5vw;
+    height: 15vw;
+    max-height: 150px;
+    min-height: 100px;
+    align-self: center;
+}
+
+.placeholder {
+    padding: 1rem calc(1.4rem + 1.5vw);
+    height: 10vw;
+    max-height: 90px;
+    align-self: center;
+}
+
+.proj-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    width: min-content;
+}
+
+.description {
+    margin: 1rem 0rem;
+}
+
+.proj-repo {
+    display: flex;
+    align-items: center;
+}
+
+.public {
+    background-color: rgb(105, 35, 140);
+    border: 1.5px solid rgb(105, 35, 140);
+    border-radius: 55%;
+}
+
+.public:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.private {
+    width: 27px;
+    height: 27px;
+}
