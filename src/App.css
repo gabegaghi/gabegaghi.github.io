@@ -1,6 +1,21 @@
 .App {
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(rgba(0, 10, 125, 0.85), transparent);
+  background-color:rgb(140, 200, 255);
+  padding: 5vh 5vw;
 }
 
 .App-logo {
@@ -14,37 +29,6 @@
   }
 }
 
-.App-header {
-  display: flex;
-  flex-direction: row;
-  background-color: #282c34;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-.Nav-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  font-size: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.Nav-link:last-child {
-  color: #bfbfbf;
-  justify-content: right;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(-15deg);
@@ -52,4 +36,24 @@
   to {
     transform: rotate(20deg);
   }
+}
+
+.hoverable {
+  border-radius: .4rem;
+  background-color: rgba(172, 124, 255, 0.5);
+  padding: .15rem .3rem;
+}
+
+.link {
+  color: mediumblue;
+}
+
+.page-title {
+  color: lightcyan;
+  margin-top: 0px;
+  padding-bottom: 2rem;
+  background-image: url('./assets/waves.png');
+  /* background-repeat: repeat-x; */
+  background-size: 100% 115%;
+  background-position: 50% 5px;
 }

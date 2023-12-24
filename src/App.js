@@ -1,34 +1,30 @@
-import logo from './logo.svg';
-import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Header from './Components/Header.js';
+import Home from './Components/Home';
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Projects from "./Components/Projects";
+import Accessibility from './Components/Accessibility';
+import Footer from "./Components/Footer";
 import './App.css';
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("/home");
-
-  const selectNavigation = (curr) => {
-    setSelectedPage(curr);
-    
-  }
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <Navbar className="Nav-bar" fixed='top'>
-          <Nav className="Navigation" fill activeKey={selectedPage} onSelect={(e) => selectNavigation(e)}>
-            <Nav.Link className="Nav-link" href="/home">Home</Nav.Link>
-            <Nav.Link className="Nav-link" href="/about">About</Nav.Link>
-            <Nav.Link className="Nav-link" href="/experience">Experience</Nav.Link>
-            <Nav.Link className="Nav-link" href="/contact">Contact</Nav.Link>
-            <Nav.Link className="Nav-link" href="/links">Links</Nav.Link>
-            {/*Last ones are separate from rest*/}
-            <Nav.Link className="Nav-link last" href="/tech">About this website</Nav.Link>
-            <Nav.Link className="Nav-link last" href="/accessibility">Accessibility</Nav.Link>
-          </Nav>
-        </Navbar>
-      </header>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/projects' element={<Projects/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/accessibility' element={<Accessibility/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+      
     </div>
   );
 }
