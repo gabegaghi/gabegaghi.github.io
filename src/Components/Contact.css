@@ -1,0 +1,68 @@
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: calc(1.6rem + 1vh) 5vw;
+    background-color: rgb(200, 220, 255);
+}
+
+.form-title {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input {
+    margin-top: .4rem;
+    padding: .8rem;
+    border: solid 2px rgb(155, 200, 255);
+    border-radius: .8rem;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+
+button {
+    display:flex;
+    align-self: flex-end;
+    border: 0px;
+    border-radius: 1.7rem;
+    background-color: #6821ff;
+    padding: calc(.6rem + 1vh) calc(1rem + 3vw);
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #e4d6ff;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.response {
+    max-width: 50%;
+}
+
+.note {
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    resize: none;
+    font-family: 'MS Shell Dlg 2';
+    font-size: .85rem;
+}
