@@ -2,8 +2,6 @@ import React from 'react';
 import TechStack from './Tech';
 import placeholder from '../assets/placeholder.png';
 import projects from './ProjectsData';
-import Loading from "./Loading";
-import cloud from '../assets/cloud.svg'
 import './Projects.css';
 
 function Projects() {

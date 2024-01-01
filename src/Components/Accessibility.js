@@ -7,7 +7,6 @@ function Accessibility() {
     <main className='Accessibility page'>
       <h1 className='page-title'>Accessibility Settings</h1>
       <Alert full/>
-      
     </main>
   );
 }
