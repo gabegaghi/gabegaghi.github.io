@@ -51,9 +51,9 @@
 .page-title {
   color: lightcyan;
   margin-top: 0px;
-  padding-bottom: 2rem;
-  background-image: url('./assets/waves.png');
-  /* background-repeat: repeat-x; */
-  background-size: 100% 115%;
-  background-position: 50% 5px;
+  padding-bottom: 2.5rem;
+  background-image: url('./assets/wave.png');
+  background-repeat: no-repeat;
+  background-size: 103% 55%;
+  background-position: 100% 90%;
 }
