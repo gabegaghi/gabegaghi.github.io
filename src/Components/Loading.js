@@ -5,7 +5,8 @@ function Loading({time=750, ...props}) {
     const [loaded, setLoaded] = useState(false);
 
       useEffect(() => {
-        setTimeout(()=> setLoaded(true), time);
+        if(!props.forever) 
+          setTimeout(()=> setLoaded(true), time);
       }, [loaded, time])
 
     return (

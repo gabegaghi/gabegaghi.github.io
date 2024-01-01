@@ -1,16 +1,15 @@
 import React from 'react';
 import TechStack from './Tech';
 import placeholder from '../assets/placeholder.png';
-// import projects from './ProjectsData';
-// import Loading from "./Loading";
+import projects from './ProjectsData';
+import Loading from "./Loading";
 import './Projects.css';
 
 function Projects() {
   return (
-    <div></div>
-    // <Loading>
-    // <main className='projects page'>
-    //   <h1 className='page-title'>Selected Projects</h1>
+    <Loading forever>
+      <main className='projects page'>
+    {/*  <h1 className='page-title'>Selected Projects</h1>
     //   <ul className='proj-list'>
     //     { projects.map(proj => 
     //     <li key={proj.title}>
@@ -36,9 +35,9 @@ function Projects() {
     //         </div>
     //       </div>
     //     </li> )}
-    //   </ul>
-    // </main>
-    // </Loading>
+    //   </ul> */}
+      </main>
+    </Loading>
   );
 }
 
