@@ -1,0 +1,42 @@
+.TechStack {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    padding: .6rem;
+    margin-right: .5rem;
+    border-radius: 30px;
+}
+
+.list:last-of-type {
+    margin: 0rem;
+}
+
+.item {
+    display: flex;
+    padding-right: calc(.25rem + .5vw);
+    align-items: center;
+}
+
+.item:last-of-type {
+    padding: 0px;
+}
+
+.langs {
+    background-color: rgb(175, 240, 175);
+}
+
+.dbs {
+    background-color: rgb(240, 225, 150);
+}
+
+.libs {
+    background-color: rgb(180, 180, 240);
+}
+
+.tools {
+    background-color: rgb(240, 175, 200);
+}

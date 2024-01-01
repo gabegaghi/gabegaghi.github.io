@@ -57,3 +57,7 @@
   background-size: 103% 55%;
   background-position: 100% 90%;
 }
+
+.preload {
+  display: none;
+}

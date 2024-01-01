@@ -40,3 +40,7 @@
 .fifth {
     animation-delay: 1s;
 }
+
+.invisible {
+    display: none;
+}

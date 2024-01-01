@@ -8,6 +8,11 @@ import Projects from "./Components/Projects";
 import Accessibility from './Components/Accessibility';
 import Footer from "./Components/Footer";
 import './App.css';
+import Loading from './Components/Loading.js'
+
+import Cloud from './assets/cloud.svg';
+import Headshot from "./assets/headshot.jpg";
+import Wave from "./assets/wave.png";
 
 function App() {
 
@@ -15,6 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header/>
+        <Loading srcList={[Cloud, Headshot, Wave]}>  
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />
@@ -22,6 +28,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/accessibility' element={<Accessibility/>} />
         </Routes>
+        </Loading>
         <Footer/>
       </BrowserRouter>
       
