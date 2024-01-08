@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './Components/Header.js';
 import Home from './Components/Home';
@@ -15,19 +15,24 @@ import Headshot from "./assets/headshot.jpg";
 import Wave from "./assets/wave.png";
 
 function App() {
-
+  const [cityHover, setCityHover] = useState('Tkaronto');
+  
   return (
     <div className="App">
       <BrowserRouter>
         <Header/>
-        <Loading srcList={[Cloud, Headshot, Wave]}>  
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<About/>} />
-          <Route path='/projects' element={<Projects/>} />
-          <Route path='/contact' element={<Contact/>} />
-          <Route path='/accessibility' element={<Accessibility/>} />
-        </Routes>
+        <Loading srcList={[Cloud, Headshot, Wave]}>
+        <div className='availability'>
+          <p className='availability-text'><box-icon class='location-icon' size='21px' name='map' type='solid' color='#f03333' />
+            <span>Available full-time for remote opportunities or in-person in <mark className='hoverable' onPointerEnter={() => setCityHover('Toronto')} onPointerLeave={() => setCityHover('Tkaronto')}>{cityHover}</mark>.</span></p>
+        </div>
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/projects' element={<Projects/>} />
+            <Route path='/contact' element={<Contact/>} />
+            <Route path='/accessibility' element={<Accessibility/>} />
+          </Routes>
         </Loading>
         <Footer/>
       </BrowserRouter>

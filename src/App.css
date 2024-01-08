@@ -3,49 +3,64 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+.availability {
+  text-align: left;
+  color:black;
+  max-width: 264px;
+  border-radius: 0 1rem 1rem 0; 
+  padding: 0 .5rem;
+  position: fixed;
+  top: 8.5rem;
+  left: 0%;
+  background-color: lightcyan;
+  border: 2.5px solid mediumaquamarine;
+  border-left: 0;
+}
+
+.availability span {
+  display: none;
+}
+
+.availability:hover span {
+  display: inline;
+  min-width: 125px;
+  margin-left: .4rem;
+}
+
+.availability-text { 
+  display: flex;
+  margin: .75rem 0;
 }
 
 .page {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  flex: 1;
   background: linear-gradient(rgba(0, 10, 125, 0.85), transparent);
   background-color:rgb(140, 200, 255);
   padding: 5vh 5vw;
-}
-
-.App-logo {
-  height: 10vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin linear infinite 2s alternate;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(-15deg);
-  }
-  to {
-    transform: rotate(20deg);
-  }
 }
 
 .hoverable {
   border-radius: .4rem;
   background-color: rgba(172, 124, 255, 0.5);
   padding: .15rem .3rem;
+  color: inherit;
 }
 
 .link {
   color: mediumblue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline 1.5px;
 }
 
 .page-title {
@@ -56,8 +71,42 @@
   background-repeat: no-repeat;
   background-size: 103% 55%;
   background-position: 100% 90%;
+  width: fit-content;
 }
 
-.preload {
-  display: none;
+.list {
+  list-style-type: none;
+  border-radius: 30px;
+  display: flex;
+  padding-left: 0;
+}
+
+.item {
+  display: inline-flex;
+  margin: 0 calc(.25rem + .5vw) 0 0;
+  align-items: center;
+  border-radius: inherit;
+}
+
+.langs {
+  background-color: rgb(175, 240, 175);
+}
+
+.dbs {
+  background-color: rgb(240, 225, 150);
+}
+
+.libs {
+  background-color: rgb(192, 192, 255);
+}
+
+.tools {
+  background-color: rgb(240, 175, 200);
+}
+
+
+@media screen and (max-width: 600px) {
+  .projects {
+      padding: 5vh 2vw;
+  }
 }
