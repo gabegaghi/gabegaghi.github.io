@@ -5,7 +5,7 @@ import './Alert.css';
 function Alert({full}) {
   return (
     <div className={full? 'alert full' : 'alert'}>
-        <h2 className='alert-title'> This website is under construction!</h2>
+        <h3 className='alert-title'> This website is under construction!</h3>
         {full? <>
         <p className='alert-text'>I have many plans for upcoming features, including some accessibility-related ones.
         However, I'm still learning about the best standards for accessible UI design, so

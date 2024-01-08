@@ -36,7 +36,7 @@ button {
     border: 0px;
     border-radius: 1.7rem;
     background-color: #6821ff;
-    padding: calc(.6rem + 1vh) calc(1rem + 3vw);
+    padding: calc(.4rem + 1vmin) calc(1rem + 3vmin);
     font-size: 1.2rem;
     font-weight: 800;
     color: #e4d6ff;

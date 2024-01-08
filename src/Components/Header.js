@@ -6,7 +6,6 @@ import headshot from '../assets/headshot.jpg';
 import './Header.css';
 
 function Header() {
-
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo"/>
