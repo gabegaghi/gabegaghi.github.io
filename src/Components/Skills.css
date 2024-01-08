@@ -9,7 +9,7 @@
     z-index: 1;
     justify-content: center;
     flex-wrap: wrap;
-    min-width: 392px;
+    min-width: 385px;
     padding: .25rem;
     border-radius: 20px;
     border: rgb(180, 180, 180) solid .5rem;
@@ -45,7 +45,7 @@
     border-bottom-right-radius: 0;
 }
 
-.all .experienced {
+.all .moderate {
     border-radius: 0;
 }
 
@@ -57,11 +57,12 @@
 .proficiency.all {
     display: flex;
     justify-content: center;
-    width: 2rem;
-    background-color: rgb(180, 180, 180);
-    padding: .3rem .6rem .2rem;
-    margin: 0 0 .3rem .2rem;
-    border-radius: 15px;
+    font-weight: 300;
+    width: 1.5rem;
+    background-color: rgb(185, 185, 185);
+    padding: .2rem .6rem;
+    margin: 0 0 .3rem .3rem;
+    border-radius: 12px;
 }
 
 .SkillsList.advanced {
@@ -72,11 +73,11 @@
     background-color: salmon;
 }
 
-.SkillsList.experienced {
+.SkillsList.moderate {
     border-color: orange;
 }
 
-.proficiency.experienced {
+.proficiency.moderate {
     background-color: orange;
 }
 

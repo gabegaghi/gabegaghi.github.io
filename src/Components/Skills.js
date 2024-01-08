@@ -9,7 +9,7 @@ function Skills() {
     <>
         <div className='tabs'>
             <div className='proficiency advanced' onClick={() => setSelected('advanced')}>advanced</div>
-            <div className='proficiency experienced' onClick={() => setSelected('experienced')}>experienced</div>
+            <div className='proficiency moderate' onClick={() => setSelected('moderate')}>moderate</div>
             <div className='proficiency familiar' onClick={() => setSelected('familiar')}>familiar</div>
             <div className='proficiency all' onClick={() => selected === 'all' ? setSelected('advanced') : setSelected('all')}>
                 {(selected !== 'all')? 'all' : 'less'}

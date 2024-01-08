@@ -5,7 +5,7 @@ const skills = {
         dbm: ['GraphQL'],
         tools: ['VS Code', 'Git']
     },
-    experienced: {
+    moderate: {
         langs: ['Python', 'C', 'Java', 'Shell Scripting'],
         tools: ['Jira', 'Docker']
     },
