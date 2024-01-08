@@ -6,7 +6,7 @@ function Loading({time=500, forever=false, ...props}) {
 
       useEffect(() => {
         if(!forever) {
-          Promise.all(props.srcList.map(async (src) => 
+          Promise.all(props.srcList.map((src) => 
             document.head.append(React.createElement("link", {rel: 'preload', href: src}))
           )).then(setTimeout(()=> setLoaded(true), time));
         }
@@ -14,16 +14,13 @@ function Loading({time=500, forever=false, ...props}) {
 
     return (
       <>
-        <div className={loaded? '' : 'invisible'}>
-          {props.children}
-        </div>
-        <div className={loaded? 'invisible' : "loading page"}>
+        {loaded? props.children : 
+        <div className="loading page">
           <div className="ripple"/>
           <div className="ripple second"/>
           <div className="ripple third"/>
           <div className="ripple fourth"/>
-          <div className="ripple fifth"/>
-        </div>
+        </div>}
       </>
     );
 }

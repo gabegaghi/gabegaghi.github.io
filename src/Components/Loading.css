@@ -3,7 +3,7 @@
         width: .5vmin;
         height: .5vmin;
         background-color:rgba(25, 75, 175, 0.5);
-        border: 5px outset rgba(150, 180, 255, 0.5);
+        border: 5px outset rgba(150, 180, 255, 0.6);
     }
     to {
         width: 15vmin;
@@ -22,23 +22,19 @@
     margin:auto;
     align-items: center;
     border-radius: 50%;
-    animation: ripple-water infinite linear 1s;
+    animation: ripple-water infinite linear 1.2s;
 }
 
-.second {
-    animation-delay: .25s;
+.ripple.second {
+    animation-delay: .4s;
 }
 
-.third {
-    animation-delay: .5s;
+.ripple.third {
+    animation-delay: .8s;
 }
 
-.fourth {
-    animation-delay: .75s;
-}
-
-.fifth {
-    animation-delay: 1s;
+.ripple.fourth {
+    animation-delay: 1.2s;
 }
 
 .invisible {
