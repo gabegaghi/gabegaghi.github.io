@@ -20,12 +20,12 @@ function About() {
             a command-line version of the Brazilian card game <i>Presidente</i>, 
             where the user plays against 3 bots. I fell in love with programming,
             and later that year I moved to Canada to study Computer Science at UofT!</p>
-          <p>Nowadays, my focus is in web and mobile front-end development, and 
-            my experience ranges from UX/UI design to back-end interaction. I believe
-            that a holistic development process is vital to build fast, seamless,
-            and maintainable applications. For this reason, whenever possible, I
-            participate in and familiarize myself with the database design, and 
-            nurture an open line of communication with the other developers.</p>
+          <p>Nowadays, my focus is in web and mobile front-end development, from 
+            UX/UI design to back-end interaction. I believe that a holistic development
+            process is vital to build fast, seamless, and maintainable applications. 
+            For this reason, whenever possible, I participate in and familiarize
+            myself with the database design, and nurture an open line of communication
+            with the other developers.</p>
           <p>I’m looking for a job where I can contribute transformative ideas, 
             ask for support and learn from my mistakes, and continue honing my 
             skills as I grow into my full potential. If you know of any opportunities
