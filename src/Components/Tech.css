@@ -1,0 +1,23 @@
+.TechStack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TechStack .list {
+    padding: .6rem;
+    margin: 0 .25rem .5rem 0;
+}
+
+.TechStack .list:last-of-type {
+    margin-right: 0;
+}
+
+.TechStack .item:last-of-type {
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .TechStack .list {
+        margin-right: .6rem;
+    }
+}

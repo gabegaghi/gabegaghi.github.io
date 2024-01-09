@@ -1,56 +1,153 @@
 .App {
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100%;
+  overflow-x: clip;
 }
 
-.App-logo {
-  height: 20vmin;
-  pointer-events: none;
+.availability {
+  text-align: left;
+  color:black;
+  max-width: 264px;
+  border-radius: 0 1rem 1rem 0; 
+  padding: 0 .5rem;
+  position: fixed;
+  z-index: 2;
+  top: 8.5rem;
+  left: 0%;
+  background-color: lightcyan;
+  border: 2.5px solid mediumaquamarine;
+  border-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.availability span {
+  display: none;
 }
 
-.App-header {
+.availability:hover span {
+  display: inline;
+  min-width: 125px;
+  margin-left: .4rem;
+}
+
+.availability-text { 
   display: flex;
-  flex-direction: row;
-  background-color: #282c34;
+  margin: .75rem 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(rgba(0, 10, 125, 0.85), transparent);
+  background-color:rgb(140, 200, 255);
+  padding: 5vh 5vw;
+}
+
+.dim-check {
   color: white;
+  padding: 5vh 10vw;
+  min-height: 100%;
 }
 
-.Navigation {
-  display: flex;
-  flex-direction: row;
+.app-container {
+  display: none;
 }
 
-.Nav-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  font-size: 1rem;
+.mobile-warn {
+  position: absolute;
+  top: 6vh;
+  background-color: darkblue;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  max-width: 70%;
+  line-break: normal;
+}
+
+.dim-warn {
+  padding: 1.2rem 1.2rem;
+  background-color: darkslateblue;
+  color: rgb(225, 220, 255);
+  line-height: 1.4;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+.hoverable {
+  border-radius: .4rem;
+  background-color: rgba(172, 124, 255, 0.5);
+  padding: .15rem .3rem;
+  color: inherit;
+}
+
+.link {
+  color: rgb(55, 55, 255);
   text-decoration: none;
-  color: #ffffff;
 }
 
-.last {
-  color: #bfbfbf;
-  font-size: 0.8rem;
-  justify-content: right;
+.link:hover {
+  text-decoration: underline 1.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.page-title {
+  color: lightcyan;
+  margin-top: 0px;
+  padding-bottom: 2.5rem;
+  background-image: url('./assets/wave.png');
+  background-repeat: no-repeat;
+  background-size: 103% 55%;
+  background-position: 100% 90%;
+  width: fit-content;
+}
+
+.list {
+  list-style-type: none;
+  border-radius: 30px;
+  display: flex;
+  padding-left: 0;
+}
+
+.item {
+  display: inline-flex;
+  margin: 0 calc(.25rem + .5vw) 0 0;
+  align-items: center;
+  border-radius: inherit;
+}
+
+.langs {
+  background-color: rgb(175, 240, 175);
+}
+
+.dbs {
+  background-color: rgb(240, 225, 150);
+}
+
+.libs {
+  background-color: rgb(192, 192, 255);
+}
+
+.tools {
+  background-color: rgb(240, 175, 200);
+}
+
+@media screen and (max-width: 600px) {
+  .projects.page {
+      padding: 5vh 2vw;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media screen and (min-width: 500px) {
+  .dim-check {
+    display: none;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
 }

@@ -1,0 +1,105 @@
+.skills > ul {
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+.SkillsList {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 385px;
+    padding: .25rem;
+    border-radius: 20px;
+    border: rgb(180, 180, 180) solid .5rem;
+    background-color: azure;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.proficiency {
+    padding: .4rem .8rem .3rem;
+    margin: 0 .2rem;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.proficiency:hover {
+    transform: scale(1.1);
+}
+
+.SkillsList .item {
+    color: black;
+    margin: .2rem;
+    padding: .4rem .6rem;
+}
+
+.all .advanced {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.all .moderate {
+    border-radius: 0;
+}
+
+.all .familiar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.proficiency.all {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    width: 1.5rem;
+    background-color: rgb(185, 185, 185);
+    padding: .2rem .6rem;
+    margin: 0 0 .3rem .3rem;
+    border-radius: 12px;
+}
+
+.SkillsList.advanced {
+    border-color: salmon;
+}
+
+.proficiency.advanced {
+    background-color: salmon;
+}
+
+.SkillsList.moderate {
+    border-color: orange;
+}
+
+.proficiency.moderate {
+    background-color: orange;
+}
+
+.SkillsList.familiar {
+    border-color: gold;
+}
+
+.proficiency.familiar {
+    background-color: gold;
+}
+
+.skill {
+    padding: .15rem .4rem;
+    border-radius: .8rem;
+}
+
+@media only screen and (min-width:600px) {
+    .SkillsList {
+        width: 440px;
+    }
+
+    .proficiency.all {
+        margin-left: 1rem;
+    }
+}

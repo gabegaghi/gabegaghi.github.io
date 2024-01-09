@@ -1,0 +1,52 @@
+@keyframes ripple-water {
+    from {
+        width: .5vmin;
+        height: .5vmin;
+        background-color:rgba(25, 75, 175, 0.5);
+        border: 5px outset rgba(150, 180, 255, 0.6);
+    }
+    to {
+        width: 16vmin;
+        height: 16vmin;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.small {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vmin;
+    height: 20vmin;
+    margin-top: 2rem;
+}
+
+.ripple {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: auto;
+    top: auto;
+    margin: auto;
+    align-items: center;
+    border-radius: 50%;
+    animation: ripple-water infinite linear 1.2s;
+}
+
+.ripple.second {
+    animation-delay: .4s;
+}
+
+.ripple.third {
+    animation-delay: .8s;
+}
+
+.ripple.fourth {
+    animation-delay: 1.2s;
+}
+
+.invisible {
+    display: none;
+}

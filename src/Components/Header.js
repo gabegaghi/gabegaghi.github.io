@@ -1,32 +1,28 @@
-import logo from './logo.svg';
-import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import logo from '../assets/MCLogo.png';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Socials from './Socials';
+import headshot from '../assets/headshot.jpg';
+import './Header.css';
 
-function App() {
-  const [selectedPage, setSelectedPage] = useState("/home");
-
-  const selectNavigation = (curr) => {
-    setSelectedPage(curr);
-  }
-
+function Header() {
   return (
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <Navbar className="Nav-bar" fixed='top'>
-          <Nav className="Navigation" fill activeKey={selectedPage} onSelect={(e) => selectNavigation(e)}>
-            <Nav.Link className="Nav-link" href="/home">Home</Nav.Link>
-            <Nav.Link className="Nav-link" href="/about">About</Nav.Link>
-            <Nav.Link className="Nav-link" href="/experience">Experience</Nav.Link>
-            <Nav.Link className="Nav-link" href="/contact">Contact</Nav.Link>
-            <Nav.Link className="Nav-link" href="/links">Links</Nav.Link>
-            {/*Last ones are separate from rest*/}
-            <Nav.Link className="Nav-link last" href="/tech">About this website</Nav.Link>
-            <Nav.Link className="Nav-link last" href="/accessibility">Accessibility</Nav.Link>
-          </Nav>
-        </Navbar>
-      </header>
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo"/>
+      <nav className="Navigation" >
+        <NavLink className="Nav-link" to="/">Home</NavLink>
+        <NavLink className="Nav-link" to="/about">About</NavLink>
+        <NavLink className="Nav-link" to="/projects">Projects</NavLink>
+        <NavLink className="Nav-link" to="/contact">Contact</NavLink>
+        <NavLink className="Nav-link" to="/accessibility">Accessibility</NavLink>
+      </nav>
+      <div className='dd-container'>
+        <img src={headshot}  className="mini-headshot" alt="headshot"/>
+        <box-icon color='white' name='chevron-down'></box-icon>
+        <Socials dropdown/>
+      </div>
+    </header>
   );
 }
 
-export default App;
+export default Header;

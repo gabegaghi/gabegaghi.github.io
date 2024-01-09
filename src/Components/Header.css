@@ -1,0 +1,87 @@
+.App-header {
+    display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: rgb(0, 15, 40);
+    align-items: stretch;
+    justify-content: space-evenly;
+    color: white;
+}
+  
+.App-logo {
+    height: 10vmin;
+    width: auto;
+    min-height: 60px;
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin linear infinite 2s alternate;
+  }
+}
+  
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+  
+.Navigation {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 600px;
+    justify-content: space-evenly;
+}
+  
+.Nav-link {
+    padding: 1vmin 0;
+    margin: 0 .15rem;
+    font-size: calc(.75rem + .5vmin);
+    text-decoration: none;
+    color: white;
+}
+  
+.Nav-link.active {
+    font-weight: 800;
+    transform: scale(1.15,1.15);
+    margin: 0 .5rem;
+}
+
+.Nav-link.active:first-child {
+    margin-left: 0;
+}
+
+.Nav-link.active:last-child {
+    margin-right: 0;
+}
+
+.Nav-link:hover {
+  color: rgb(200, 235, 255);
+  border-bottom: 2px currentColor solid;
+}
+
+.mini-headshot {
+    height: 8vmin;
+    min-height: 45px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.dd-container {
+    display: flex;
+    align-items: center;
+    padding: 0 1vmin;
+    align-self: stretch;
+}
+
+.dd-container:hover .dropdown{
+    display: flex;
+    flex-direction: column;   
+}
