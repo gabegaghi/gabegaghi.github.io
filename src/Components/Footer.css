@@ -4,7 +4,6 @@
     background-color: rgb(235, 210, 150); /* rgb(250, 225, 160); */
     align-items: center;
     justify-content: center;
-    font-size: calc(1rem + 2vmin);
 }
 
 .footer-nav {
@@ -13,9 +12,8 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
-    font-size: 1rem;
     text-decoration: none;
-    color: rgb(100, 85, 45); /* rgb(160, 135, 65) */
+    color: rgb(100, 85, 45);
 }
 
 .footer-nav:hover {
