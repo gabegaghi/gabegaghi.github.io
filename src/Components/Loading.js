@@ -15,7 +15,7 @@ function Loading({time=500, forever=false, ...props}) {
     return (
       <>
         {loaded? props.children : 
-        <div className="loading page">
+        <div className={forever? "small" : "page"}>
           <div className="ripple"/>
           <div className="ripple second"/>
           <div className="ripple third"/>

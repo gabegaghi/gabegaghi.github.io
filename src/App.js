@@ -19,13 +19,20 @@ function App() {
   
   return (
     <div className="App">
+      <div className='dim-check page'>
+        <h1 className='mobile-warn'>Mobile version coming soon!</h1>
+        <p className='dim-warn'>This website must be viewed on a device with a width of at least <b>500px</b>.</p>
+        <span>Until then, have the loading spinner I made for this website:</span>
+        <Loading forever/>
+      </div>
+      <div className='app-container'>
       <BrowserRouter>
         <Header/>
         <Loading srcList={[Cloud, Headshot, Wave]}>
-        <div className='availability'>
-          <p className='availability-text'><box-icon class='location-icon' size='21px' name='map' type='solid' color='#f03333' />
-            <span>Available full-time for remote opportunities or in-person in <mark className='hoverable' onPointerEnter={() => setCityHover('Toronto')} onPointerLeave={() => setCityHover('Tkaronto')}>{cityHover}</mark>.</span></p>
-        </div>
+          <div className='availability'>
+            <p className='availability-text'><box-icon class='location-icon' size='21px' name='map' type='solid' color='#f03333' />
+              <span>Available full-time for remote opportunities or in-person in <mark className='hoverable' onPointerEnter={() => setCityHover('Toronto')} onPointerLeave={() => setCityHover('Tkaronto')}>{cityHover}</mark>.</span></p>
+          </div>
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/about' element={<About/>} />
@@ -36,7 +43,7 @@ function App() {
         </Loading>
         <Footer/>
       </BrowserRouter>
-      
+      </div>
     </div>
   );
 }

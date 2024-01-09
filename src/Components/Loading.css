@@ -6,11 +6,21 @@
         border: 5px outset rgba(150, 180, 255, 0.6);
     }
     to {
-        width: 15vmin;
-        height: 15vmin;
+        width: 16vmin;
+        height: 16vmin;
         background-color: transparent;
         border-color: transparent;
     }
+}
+
+.small {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vmin;
+    height: 20vmin;
+    margin-top: 2rem;
 }
 
 .ripple {
@@ -19,7 +29,7 @@
     position: absolute;
     left: auto;
     top: auto;
-    margin:auto;
+    margin: auto;
     align-items: center;
     border-radius: 50%;
     animation: ripple-water infinite linear 1.2s;
