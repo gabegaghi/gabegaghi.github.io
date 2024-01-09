@@ -1,24 +1,25 @@
 import React, {useRef, useState} from 'react';
 import './Contact.css';
-import emailjs from 'email-js';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
-  const [alert, setAlert] = useState(null);
+  const [alert, setAlert] = useState("");
 
   const sendEmail = (e) => {
-   e.preventDefault();
-   emailjs.sendForm('service_1gh5lg9', 'template_phfazqh', form.current, 'y437V_fKICDfAy1cY')
-     .then(() => {
-         setAlert("Your message sent succesfully, check your email for confirmation!");
-     }, () => {
-         setAlert("Something went wrong, please try again.");
-     });
- };
+    e.preventDefault();
+    setAlert('Sending...');
+    emailjs.sendForm('service_1gh5lg9', 'template_phfazqh', form.current, 'y437V_fKICDfAy1cY')
+      .then(() => {
+        setAlert("Email sent, check your inbox for confirmation!");
+      }, () => {
+        setAlert("Something went wrong, please try again.");
+      });
+  };
 
   return (
     <main className='contact page'>
-      <form className='contact-form' ref={form}>
+      <form className='contact-form' ref={form} onSubmit={sendEmail}>
         <h1 className='form-title'>Contact me!</h1>
         <div className='note'>Please don't hesitate to send me a message, I'd be happy to answer any questions or just connect to exchange support! You can also reach me through linkedin, if that's easier.</div>
         <label className='field'>Name
@@ -32,7 +33,7 @@ function Contact() {
         </label>
         <div className='bottom'>
           <span className='response'>{alert}</span>
-          <button type='submit' onSubmit={sendEmail}>Send email</button>
+          <button type='submit' >Send email</button>
         </div>
       </form>
     </main>
