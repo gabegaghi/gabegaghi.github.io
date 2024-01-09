@@ -11,8 +11,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7vh 6vw 6vh;
-    margin-bottom: 5vh;
+    padding: 3.5rem 6vw 2.5rem;
+    margin-bottom: 50px;
+    /* background image taken from https://svgsilh.com/image/1326174.html */
     background-image: url('../assets/cloud.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -33,7 +34,7 @@
 }
 
 .proj-title {
-    margin: 1vh 1vw;
+    margin: .5rem 1rem;
 }
 
 .proj-subheading {
@@ -63,17 +64,19 @@
 }
 
 .logo {
-    padding: 0vh 1.5vw;
-    height: 15vw;
-    max-height: 150px;
-    min-height: 100px;
+    padding: 0 1.5vw;
+    width: 15vw;
+    height: auto;
+    max-width: 150px;
+    min-width: 100px;
     align-self: center;
 }
 
 .placeholder {
     padding: 1rem calc(1.4rem + 1.5vw);
-    height: 10vw;
-    max-height: 90px;
+    width: 10vw;
+    max-width: 90px;
+    height: auto;
     align-self: center;
 }
 

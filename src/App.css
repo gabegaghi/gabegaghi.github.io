@@ -49,7 +49,7 @@
 .dim-check {
   color: white;
   padding: 5vh 10vw;
-  min-height: 100%;
+  height: 100%;
 }
 
 .app-container {
@@ -96,7 +96,9 @@
   color: lightcyan;
   margin-top: 0px;
   padding-bottom: 2.5rem;
-  background-image: url('./assets/wave.png');
+  /* background image taken from
+  https://www.hiclipart.com/free-transparent-background-png-clipart-fldyw */
+  background-image: url('./assets/wave.png'); 
   background-repeat: no-repeat;
   background-size: 103% 55%;
   background-position: 100% 90%;

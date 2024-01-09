@@ -18,7 +18,7 @@ const projects = [{
       libs: ["react"],
       tools: ["visual-studio", "github", "figma"]
     },
-    repo: "https://github.com/gabegaghi/personal-website",
+    repo: "https://github.com/gabegaghi/gabegaghi.github.io",
     public: true
   }, {
     title: 'Pigeon',

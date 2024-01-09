@@ -70,6 +70,10 @@
     width: min-content;
 }
 
+.box ul {
+    font-size: 1rem;
+}
+
 .title {
     border-bottom: 2px rgb(60, 25, 190) solid;
     padding-bottom: .4rem;

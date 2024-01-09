@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Header from './Components/Header.js';
 import Home from './Components/Home';
 import About from "./Components/About";
@@ -26,7 +26,6 @@ function App() {
         <Loading forever/>
       </div>
       <div className='app-container'>
-      <BrowserRouter>
         <Header/>
         <Loading srcList={[Cloud, Headshot, Wave]}>
           <div className='availability'>
@@ -42,7 +41,6 @@ function App() {
           </Routes>
         </Loading>
         <Footer/>
-      </BrowserRouter>
       </div>
     </div>
   );

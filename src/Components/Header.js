@@ -9,12 +9,12 @@ function Header() {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo"/>
-      <nav className="Navigation" >
-        <NavLink className="Nav-link" to="/">Home</NavLink>
-        <NavLink className="Nav-link" to="/about">About</NavLink>
-        <NavLink className="Nav-link" to="/projects">Projects</NavLink>
-        <NavLink className="Nav-link" to="/contact">Contact</NavLink>
-        <NavLink className="Nav-link" to="/accessibility">Accessibility</NavLink>
+      <nav className="navigation" >
+        <NavLink className="nav-link" to="/">Home</NavLink>
+        <NavLink className="nav-link" to="/about">About</NavLink>
+        <NavLink className="nav-link" to="/projects">Projects</NavLink>
+        <NavLink className="nav-link" to="/contact">Contact</NavLink>
+        <NavLink className="nav-link" to="/accessibility">Accessibility</NavLink>
       </nav>
       <div className='dd-container'>
         <img src={headshot}  className="mini-headshot" alt="headshot"/>
