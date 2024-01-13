@@ -1,13 +1,13 @@
 @keyframes ripple-water {
     from {
-        width: .5vmin;
-        height: .5vmin;
+        width: 1px;
+        height: 1px;
         background-color:rgba(25, 75, 175, 0.5);
         border: 5px outset rgba(150, 180, 255, 0.6);
     }
     to {
-        width: 16vmin;
-        height: 16vmin;
+        width: 100px;
+        height: 100px;
         background-color: transparent;
         border-color: transparent;
     }
@@ -18,8 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vmin;
-    height: 20vmin;
+    width: 110px;
+    height: 110px;
     margin-top: 2rem;
 }
 
