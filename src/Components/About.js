@@ -8,7 +8,7 @@ function About() {
   return (
     <main className='About page'>
       <div className='top'>
-        <img src={headshot} className="Headshot" height={150} width={150} alt="headshot"/>
+        <img src={headshot} className="headshot" height={150} width={150} alt="headshot"/>
         <div>
           <h1 className='page-title'>Get to know me!</h1>
           <span className='definition'><b>marinho:</b> (<i>adj.</i>) marine; of the sea.</span>

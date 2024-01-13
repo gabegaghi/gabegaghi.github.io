@@ -5,7 +5,7 @@ import './Accessibility.css';
 function Accessibility() {
   return (
     <main className='Accessibility page'>
-      <h1 className='page-title'>Accessibility Settings</h1>
+      <h1 className='page-title'>Accessibility</h1>
       <Alert full/>
     </main>
   );
