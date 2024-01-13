@@ -2,8 +2,9 @@
     display: flex;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    min-height: 5rem;
     top: 0;
+    min-height: 80px;
+    height: 10vh;
     z-index: 3;
     background-color: rgb(0, 15, 40);
     align-items: center;
@@ -13,7 +14,7 @@
   
 .App-logo {
     width: 10vw;
-    min-width: 60px;
+    min-width: 55px;
     max-width: 80px;
     height: auto;
     pointer-events: none;
@@ -37,20 +38,21 @@
 .navigation {
     display: flex;
     align-items: center;
-    max-width: 600px;
+    min-width: 40%;
     justify-content: space-evenly;
 }
 
 .App-header .navigation {
-  width: 70%;
+    flex-wrap: wrap;
+    width: 220px;
 }
   
 .nav-link {
-    padding: .5rem 0;
-    margin: 0 .15rem;
-    font-size: calc(.75rem + .5vmin);
+    padding: .5rem 0 .25rem;
+    margin: 0 .4rem;
     text-decoration: none;
     color: white;
+    border-bottom: 2px transparent solid;
 }
   
 .nav-link.active {
@@ -68,7 +70,7 @@
 }
 
 .nav-link:hover {
-  color: rgb(200, 235, 255);
+  color: lightblue;
   border-bottom: 2px currentColor solid;
 }
 
@@ -90,4 +92,15 @@
 .dd-container:hover .dropdown{
     display: flex;
     flex-direction: column;   
+}
+
+@media screen and (min-width: 525px) {
+    .App-header .navigation {
+      width: 70%;
+      flex-wrap: nowrap;
+    }
+
+    .navigation {
+      max-width: 600px;
+    }
 }
