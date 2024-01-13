@@ -1,8 +1,4 @@
-.proj-list {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
+.proj.list {
     flex-direction: column;
     align-items: center;
 }
@@ -11,17 +7,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem 6vw 2.5rem;
+    padding: 3.5rem 6vw 3rem;
     margin-bottom: 50px;
     /* background image taken from https://svgsilh.com/image/1326174.html */
     background-image: url('../assets/cloud.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: fit-content;
-    min-width: 400px;
+    /* width: fit-content; */
+    max-width: 420px;
 }
 
-.proj-list :last-child > div {
+.proj.list :last-child > div {
     margin-bottom: 0;
 }
 
@@ -29,66 +25,69 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 60%;
     margin-right: 5vw;
 }
 
 .proj-title {
-    margin: .5rem 1rem;
+    margin: .5rem;
 }
 
 .proj-subheading {
     text-align: left;
     display: flex;
     align-items: center;
-    flex: 1;
+    /* flex-wrap: wrap;
+    max-width: 65%; */ 
     font-size: 1.15rem;
+    margin-right: 4vw;
+    font-size: .9rem;
 }
 
 .proj-date {
     margin: 0;
     background-color: powderblue;
     border-radius: 25px;
-    padding: .25rem 1rem;
+    padding: .25rem .6rem;
 }
 
-.under {
-    margin: 0 4vw 0 1.5vw;
+.affiliation {
+    margin-left: 1.5vw;
     background-color: rgb(174, 232, 218);
     border-radius: 25px;
-    padding: .25rem 1rem;
+    padding: .25rem .75rem .25rem .65rem;
 }
 
 .proj-body {
     display: flex;
+    flex-direction: column;
 }
 
-.logo {
-    padding: 0 1.5vw;
+.proj-logo {
+    padding: 0 .5rem 0 2vw;
     width: 15vw;
     height: auto;
-    max-width: 150px;
-    min-width: 100px;
+    max-width: 120px;
+    min-width: 80px;
     align-self: center;
 }
 
 .placeholder {
-    padding: 1rem calc(1.4rem + 1.5vw);
+    padding: 1rem 1.5rem 1rem calc(1rem + 2vw);
     width: 10vw;
-    max-width: 90px;
+    max-width: 72px;
+    min-width: 48px;
     height: auto;
     align-self: center;
 }
 
 .proj-text {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    width: min-content;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
+    width: 60%;
     margin: 1rem 0rem;
 }
 
@@ -110,4 +109,25 @@
 .private {
     width: 27px;
     height: 27px;
+}
+
+
+@media screen and (min-width: 800px) {
+    .placeholder {
+        padding: 1.5rem 2rem 1.5rem calc(1.5rem + 2vw);
+    }
+
+    /* .proj-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3.5rem 6vw 3rem;
+        margin-bottom: 50px;
+        /* background image taken from https://svgsilh.com/image/1326174.html
+        background-image: url('../assets/cloud.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: fit-content;
+        min-width: 400px;
+    } */
 }

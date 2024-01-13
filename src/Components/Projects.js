@@ -8,7 +8,7 @@ function Projects() {
   return (
     <main className='projects page'>
       <h1 className='page-title'>Selected Projects</h1>
-      <ul className='proj-list'>
+      <ul className='proj list'>
         { projects.map(proj => 
           <li key={proj.title}>
             <div className='proj-item'>
@@ -21,15 +21,15 @@ function Projects() {
               </div>
               <div className='proj-subheading'>
                 <b className='proj-date' aria-label='Date'>{proj.year}</b>
-                <i className='under' aria-label='Affiliation'>{proj.for}</i>
+                <i className='affiliation' aria-label='Affiliation'>{proj.for}</i>
               </div>
               <div className='proj-body'>
-                {proj.logo ? <img className='proj logo' src={proj.logo} alt={proj.title + ' logo'}/>
-                : <img className='placeholder' src={placeholder} alt='placeholder'/> }
                 <div className='proj-text'>
+                  {proj.logo ? <img className='proj-logo' src={proj.logo} alt={proj.title + ' logo'}/>
+                  : <img className='placeholder' src={placeholder} alt='placeholder'/> }
                   <span className='description'>{proj.desc}</span>
-                  <TechStack stack={proj.tech}/>
                 </div>
+                <TechStack stack={proj.tech}/>
               </div>
             </div>
          </li>

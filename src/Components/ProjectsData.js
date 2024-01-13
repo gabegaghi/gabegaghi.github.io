@@ -9,7 +9,7 @@ import MCLogo from '../assets/MCLogo.png';
   // tools: visual-studio, github, figma, docker */
 const projects = [{
     title: 'marinhocode',
-    year: 2023,
+    year: 2024,
     logo: MCLogo,
     for: 'Personal',
     desc: "This portfolio website, which is still a work in progress.",
