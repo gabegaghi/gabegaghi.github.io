@@ -8,34 +8,30 @@ function Skills() {
     return (
     <>
         <div className='tabs'>
-            <div className='proficiency advanced' onClick={() => setSelected('advanced')}>advanced</div>
-            <div className='proficiency moderate' onClick={() => setSelected('moderate')}>moderate</div>
-            <div className='proficiency familiar' onClick={() => setSelected('familiar')}>familiar</div>
-            <div className='proficiency all' onClick={() => selected === 'all' ? setSelected('advanced') : setSelected('all')}>
+            <div className='tab all' onClick={() => selected === 'all' ? setSelected('advanced') : setSelected('all')}>
                 {(selected !== 'all')? 'all' : 'less'}
             </div>
-        </div>
-        <ul className={selected==='all'? 'all' : 'list-container'}> {Object.entries(skills).map(([prof, list]) =>
+            <div className={'tab familiar ' + (selected==='familiar' ? 'active' : 'inactive')} onClick={() => setSelected('familiar')}><span>familiar</span></div>
+            <div className={'tab advanced ' + (selected==='advanced' || selected==='all' ? 'active' : 'inactive')} onClick={() => setSelected('advanced')}><span>advanced</span></div>
+            <div className={'tab moderate ' + (selected==='moderate' ? 'active' : 'inactive')} onClick={() => setSelected('moderate')}><span>moderate</span></div>
+            </div>
+        <div className={selected==='all'? 'all' : 'list-container'}> {Object.entries(skills).map(([prof, list]) =>
             (selected === prof || selected === 'all') ?
             <ul className={'SkillsList ' +  prof} key={prof} title={prof}>
-                {list.langs ? <ul className='list' key='langs' title='languages'>
-                    { list.langs.map(item => 
-                    <li className='langs item' key={item}>{item}</li> )}
-                </ul> : <Fragment key='empty-langs'/> }
-                {list.libs ? <ul className='list' key='libs' title='libraries & frameworks'>
-                    { list.libs.map(item => 
-                    <li className='libs item' key={item}>{item}</li> )}
-                </ul> : <Fragment key='empty-libs'/> }
-                { list.tools ? <ul className='list' key='tools' title='dev tools'>
-                    { list.tools.map(item => 
-                    <li className='tools item' key={item}>{item}</li> )}
-                </ul> : <Fragment key='empty-tools'/> }
-                { list.dbm ? <ul className='list' key='dbs' title='database related'>
-                    { list.dbm.map(item => 
-                    <li className='dbs item' key={item}>{item}</li> )}
-                </ul> : <Fragment key='empty-dbs'/> }
+                { list.langs ? list.langs.map(item => 
+                    <li className='langs item' key={item}>{item}</li> )
+                    : <Fragment key='empty-langs'/>}
+                { list.libs ? list.libs.map(item => 
+                    <li className='libs item' key={item}>{item}</li> )
+                    : <Fragment key='empty-libs'/> }
+                { list.tools ? list.tools.map(item => 
+                    <li className='tools item' key={item}>{item}</li> )
+                    : <Fragment key='empty-tools'/> }
+                { list.dbm ? list.dbm.map(item => 
+                    <li className='dbs item' key={item}>{item}</li> )
+                    : <Fragment key='empty-dbs'/> }
             </ul> : <Fragment key={'empty ' + prof}/>)}
-        </ul>
+        </div>
     </>);
 }
 

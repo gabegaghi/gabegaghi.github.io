@@ -55,7 +55,7 @@ function About() {
         <div className='experience box'>
           <h2 className='title'>Experience</h2>
             <div className='first row'>
-              <a className='role' href='https://www.credly.com/badges/37d515a7-1b27-49b8-9907-50699ae1dabb/' rel='noopener noreferrer' target='_blank'>Software Engineer Intern <box-icon name='badge-check' type='solid' class='link-icon' size='18px' color='darkcyan' /></a>
+              <a className='role' href='https://www.credly.com/badges/37d515a7-1b27-49b8-9907-50699ae1dabb/' rel='noopener noreferrer' target='_blank'>Software Engineer <span>Intern <box-icon name='badge-check' type='solid' class='link-icon' size='16px' color='darkcyan' /></span></a>
               <i className='right date'>Jun - Aug 2022</i>
             </div>
             <div className='second row'>

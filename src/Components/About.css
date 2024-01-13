@@ -1,3 +1,7 @@
+.About .page-title {
+    margin-top: 1rem;
+}
+
 .top {
     display: flex;
     flex-wrap: wrap;
@@ -6,10 +10,16 @@
     justify-content: center;
 }
 
-.Headshot {
+.top div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot {
     border-radius: 50%;
     border: 10px solid white;
-    margin-right: 5vw;
+    margin: 0 5vw;
 }
 
 .definition {
@@ -56,22 +66,23 @@
 }
 
 .box {
-    padding: 0 2vw;
+    padding: 0 calc(.5rem + 2vw);
     margin-top: 2rem;
-    min-width: 385px;
-    max-width: 550px;
+    max-width: 500px;
     height: fit-content;
     background-color: rgb(190, 225, 255);
     border-radius: 15px;
     text-align: left;
 }
 
-.skills.box {
-    width: min-content;
+.role span {
+    display: inline-block;
+    width: max-content;
 }
 
-.box ul {
-    font-size: 1rem;
+.link-icon {
+    position: relative;
+    top: 3px;
 }
 
 .title {
@@ -82,8 +93,6 @@
 }
 
 .role {
-    display: flex;
-    align-items: center;
     color: black;
     text-decoration: none;
     font-weight: 600;
@@ -91,10 +100,6 @@
 
 .row a:hover {
     color: darkcyan;
-}
-
-.link-icon {
-    margin-left: .25rem;
 }
 
 .role:hover .link-icon {
@@ -107,46 +112,41 @@
 }
 
 .second.row {
-    padding-bottom: 1rem;
+    padding: .25rem 0 1rem;
     border-bottom: 2px solid rgb(60, 25, 190);
 }
 
 .right {
+    align-self: center;
     text-align: right;
+    min-width: max-content;
     padding-left: 2vw;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .headshot {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .container {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .box {
-        width: 35vw;
+        width: 37vw;
     }
 
     .skills.box {
+        max-width: 40vw;
+        width: fit-content;
         margin-top: 0;
     }
 
     .abt-me {
-        width: 40%; 
+        width: 40vw; 
         padding-right: 1rem;
-    }
-
-    .experience {
-        position: relative;
-        bottom: 60px;
-
-    }
-}
-
-@media only screen and (min-width: 1220px) {
-    .container {
-        justify-content: space-around;
-    }
-
-    .experience {
-        bottom: 0px;
     }
 }
