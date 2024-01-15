@@ -1,6 +1,6 @@
 import React from 'react';
 import headshot from '../assets/headshot.jpg';
-import Skills from './Skills';
+import Skills from '../Components/Skills';
 import './About.css';
 
 function About() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Alert from './Alert';
-import Hover from './Hover';
+import Alert from '../Components/Alert';
+import Hover from '../Components/Hover';
 import './Home.css';
 
 function Home() {

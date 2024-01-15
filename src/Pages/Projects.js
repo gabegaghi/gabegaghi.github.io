@@ -1,5 +1,5 @@
 import React from 'react';
-import TechStack from './Tech';
+import TechStack from '../Components/Tech';
 import placeholder from '../assets/placeholder.png';
 import projects from './ProjectsData';
 import './Projects.css';

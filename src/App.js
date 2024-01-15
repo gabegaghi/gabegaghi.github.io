@@ -1,11 +1,11 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Header from './Components/Header';
-import Home from './Components/Home';
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Projects from "./Components/Projects";
-import Accessibility from './Components/Accessibility';
+import Home from './Pages/Home';
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Projects from "./Pages/Projects";
+import Accessibility from './Pages/Accessibility';
 import Footer from "./Components/Footer";
 import Loading from './Components/Loading';
 import Hover from "./Components/Hover";

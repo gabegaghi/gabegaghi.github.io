@@ -1,5 +1,5 @@
 import React from 'react';
-import Alert from './Alert';
+import Alert from '../Components/Alert';
 import './Accessibility.css';
 
 function Accessibility() {
