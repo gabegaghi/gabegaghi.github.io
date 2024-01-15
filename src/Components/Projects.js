@@ -12,13 +12,11 @@ function Projects() {
         { projects.map(proj => 
           <li key={proj.title}>
             <div className='proj-item'>
-              <div className='proj-heading'>
-                <h2 className='proj-title'>{proj.title}</h2>
-                {proj.public ?
-                <a href={proj.repo} target='_blank' rel='noopener noreferrer' className='proj-repo' aria-label={proj.title + ' github repo (new tab)'}>
+            {proj.public ?
+                <a href={proj.repo} target='_blank' rel='noopener noreferrer' className='repo' aria-label={proj.title + ' github repo (new tab)'}>
                   <box-icon class='public' type='logo' color='white' name='github'/>
-                </a> : <box-icon class='private' color='red' name='hide'/>}
-              </div>
+                </a> : <box-icon class='private repo' color='red' name='hide'/>}
+                <h2 className='proj-title'>{proj.title}</h2>
               <div className='proj-subheading'>
                 <b className='proj-date' aria-label='Date'>{proj.year}</b>
                 <i className='affiliation' aria-label='Affiliation'>{proj.for}</i>
