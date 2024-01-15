@@ -4,32 +4,48 @@
     z-index: 1;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 410px;
-    margin-top: 1.8rem;
+    margin-top: 0;
     padding: .25rem;
     border-radius: 20px;
     border: rgb(180, 180, 180) solid .5rem;
     background-color: azure;
 }
 
+.skills.box {
+    max-width: 420px;
+    width: stretch;
+}
+
 .tabs {
     position: relative;
     display: flex;
+    height: 2rem; 
 }
 
 .tab {
     position: absolute;
-    padding: .4rem .6rem .2rem;
+    padding: .4rem .6rem;
     border-radius: 10px 10px 0 0;
     font-weight: 600;
     text-align: center;
-    width: 78px;
     cursor: pointer;
 }
 
 .tab:hover {
     padding-bottom: 2rem;
     animation: tab-up ease-in 100ms forwards;
+}
+
+.tab.all {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    width: 1.8rem;
+    background-color: rgb(185, 185, 185);
+    padding: .15rem .6rem;
+    margin: 0 0 .3rem .3rem;
+    border-radius: 12px;
+    right: 7%;
 }
 
 .tab.all:hover {
@@ -39,10 +55,10 @@
     
   @keyframes tab-up {
     from {
-        bottom: -3.5rem;
+        bottom: -1.6rem;
     }
     to {
-        bottom: -2rem;
+        bottom: 0;
     }
   }
 
@@ -65,25 +81,12 @@
 
 .all .moderate {
     border-radius: 0;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .all .familiar {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    margin-top: 0;
-}
-
-.tab.all {
-    display: flex;
-    justify-content: center;
-    font-weight: 300;
-    width: 1.5rem;
-    background-color: rgb(185, 185, 185);
-    padding: .15rem .6rem;
-    margin: 0 0 .3rem .3rem;
-    border-radius: 12px;
-    right: 7%;
 }
 
 .SkillsList.advanced {
