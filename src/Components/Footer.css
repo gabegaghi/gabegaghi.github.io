@@ -4,6 +4,7 @@
     background-color: rgb(235, 210, 150); /* rgb(250, 225, 160); */
     align-items: center;
     justify-content: center;
+    padding-bottom: .5rem;
 }
 
 .footer-nav {

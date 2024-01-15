@@ -1,8 +1,6 @@
 .icon {
-    height: 5vw;
-    min-height: 35px;
-    max-height: 45px;
-    width: auto;
+    height: 40px;
+    width: 40px;
     border: transparent solid 2px;
 }
 
@@ -12,8 +10,7 @@
 
 .wide {
     justify-content: space-between;
-    width: 35vw;
-    max-width: 220px;
+    width: 200px;
 }
 
 .dropdown {
