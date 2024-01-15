@@ -26,6 +26,7 @@
     color: rgb(255, 225, 255);
     text-decoration: none;
     padding: .5rem 1rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
