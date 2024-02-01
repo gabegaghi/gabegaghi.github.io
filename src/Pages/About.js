@@ -21,7 +21,7 @@ function About() {
             where the user plays against 3 bots. I fell in love with programming,
             and later that year I moved to Canada to study Computer Science at UofT!</p>
           <p>Nowadays, my focus is in web and mobile front-end development, from 
-            UX/UI design to back-end interaction. I believe that a holistic development
+            UI/UX design to back-end integration. I believe that a holistic development
             process is vital to build fast, seamless, and maintainable applications. 
             For this reason, whenever possible, I participate in and familiarize
             myself with the database design, and nurture an open line of communication
@@ -64,7 +64,10 @@ function About() {
             </div>
             <ul>
               <li>Completed 5 weeks of certified training on topics such as: APIs, Web Development, Databases, Microservices, DevOps, Security & Risk Management, and Testing.</li>
-              <li>Planned and built a cross-platform financial mobile app called Pigeon using Node.js as a front-end developer on an Agile Scrum team of 9 interns.</li>
+              <li>Teamed up with 4 other software interns to brainstorm a suitable tech stack and design an optimal SQL schema for Pigeon, a cross-platform financial mobile app.</li>
+              <li>Collaborated with 3 product interns to ensure realistic prototypes and feasible software requirements.</li>
+              <li>Translated Figma designs into pages and reusable components within a React Native UI written in TypeScript using Apollo GraphQL for data handling.</li>
+              <li>Maintained a Git workflow with CI/CD through Github Actions while creating and reviewing pull requests.</li>
               <li>Presented the application and its 5-week development process to an audience of technical and non-technical clients, leaders, and colleagues from the company.</li>
             </ul>
         </div>

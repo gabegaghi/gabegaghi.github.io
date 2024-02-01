@@ -50,9 +50,9 @@
 }
 
 .hoverable {
-  border-radius: .4rem;
+  border-radius: .25em;
   background-color: rgba(172, 124, 255, 0.5);
-  padding: .15rem .3rem;
+  padding: 0 .25rem;
   color: inherit;
 }
 

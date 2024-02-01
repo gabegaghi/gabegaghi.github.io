@@ -10,8 +10,8 @@ const skills = {
         tools: ['Jira', 'Docker']
     },
     familiar: {
-        libs: ['Express'],
-        dbm: ['jQuery', 'MySQL', 'MongoDB', 'PostgreSQL'],
+        libs: ['Express', 'jQuery'],
+        dbm: ['MySQL', 'MongoDB', 'PostgreSQL'],
         tools: ['GitHub Actions', 'Figma']
     }
 } 

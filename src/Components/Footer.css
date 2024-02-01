@@ -7,15 +7,7 @@
     padding-bottom: .5rem;
 }
 
-.footer-nav {
-    display: flex;
-    align-items: center;
-    padding: 1rem .4rem;
-    text-decoration: none;
-    color: rgb(100, 85, 45);
-    font-size: .9rem;
-}
-
-.footer-nav:hover {
-    color: rgb(160, 135, 65);
+.copyright-notice {
+    margin: .5rem 0 1rem;
+    color: rgb(90, 75, 30);
 }

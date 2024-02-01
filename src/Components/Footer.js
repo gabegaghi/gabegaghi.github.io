@@ -13,13 +13,7 @@ function Footer() {
           <path stroke='white' strokeWidth={20} strokeLinecap='round' d='M0 15c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8'/>
         </svg>
         <Socials spaced/>
-        <nav className="navigation">
-          <NavLink className="footer-nav" to="/">Home</NavLink>
-          <NavLink className="footer-nav" to="/about">About</NavLink>
-          <NavLink className="footer-nav" to="/projects">Projects</NavLink>
-          <NavLink className="footer-nav" to="/contact">Contact</NavLink>
-          <NavLink className="footer-nav" to="/accessibility">Accessibility</NavLink>
-        </nav>
+        <span className='copyright-notice'>© 2024 Gabriela Esquivel Gaghi.</span>
       </footer>
   );
 }

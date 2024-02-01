@@ -25,7 +25,7 @@ const projects = [{
     year: 2022,
     logo: PigeonLogo,
     for: 'Publicis Sapient',
-    desc: "Cross-platform financial mobile app for expense-tracking, budgeting, and more.",
+    desc: "Android & iOS app offering expense tracking, budgeting, and analytic financial reports.",
     tech: {
       langs: ["typescript"],
       libs: ["react", "nodejs"], // expressjs
@@ -39,7 +39,7 @@ const projects = [{
     year: 2022,
     logo: DSLogo,
     for: 'UTSC',
-    desc: "Web application to video-call other users while editing the same documents in real time.",
+    desc: "Web application to video-call other users while editing shared documents in real time.",
     tech: {
       langs: ["typescript", "css3", "html5"],
       libs: ["react", "nodejs"], // expressjs
@@ -51,11 +51,11 @@ const projects = [{
     title: 'PawsUp',
     year: 2021,
     for: 'UTSC',
-    desc: "Mobile Android app where users can hire pet trainers and pet sitters.",
+    desc: "Mobile Android app where users can hire pet trainers and pet sitters, or buy pet products.",
     tech: {
       langs: ["javascript"],
-      libs: ["react", "nodejs"], // expressjs
-      dbm: ["mongodb", "jquery"],
+      libs: ["react", "nodejs", "jquery"], // expressjs
+      dbm: ["mongodb"],
       tools: ["visual-studio", "github", "docker"]
     },
     public: false,
