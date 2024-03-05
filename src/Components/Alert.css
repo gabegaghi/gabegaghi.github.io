@@ -26,7 +26,9 @@
     margin: 1.5rem 0rem;
 }
 
-.upcoming-title {
+.upcoming-list::before {
+    content: attr(title);
     margin: .5rem 0rem;
     color: brown;
+    font-size: 1.2rem;
 }
