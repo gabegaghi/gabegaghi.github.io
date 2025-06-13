@@ -28,9 +28,9 @@ const projects = [{
     desc: "Android & iOS app offering expense tracking, budgeting, and analytic financial reports.",
     tech: {
       langs: ["typescript"],
-      libs: ["react", "nodejs"], // expressjs
+      libs: ["react"], // expressjs
       dbm: ["graphql"], // ["mysql"],
-      tools: ["github", "figma", "docker"]
+      tools: ["nodejs", "github", "figma", "docker"]
     },
     repo: "https://github.com/ps-toronto-team-4/budgeting-app-frontend",
     public: true,
@@ -42,9 +42,9 @@ const projects = [{
     desc: "Web application to video-call other users while editing shared documents in real time.",
     tech: {
       langs: ["typescript", "css3", "html5"],
-      libs: ["react", "nodejs"], // expressjs
+      libs: ["react"], // expressjs
       dbm: ["graphql"], //["mysql"],
-      tools: [ "github", "docker"]
+      tools: ["nodejs", "github", "docker"]
     },
     public: false,
   }, {
@@ -54,9 +54,9 @@ const projects = [{
     desc: "Mobile Android app where users can hire pet trainers and pet sitters, or buy pet products.",
     tech: {
       langs: ["javascript"],
-      libs: ["react", "nodejs", "jquery"], // expressjs
+      libs: ["react", "jquery"], // expressjs
       dbm: ["mongodb"],
-      tools: ["visual-studio", "github", "docker"]
+      tools: ["nodejs", "visual-studio", "github", "docker"]
     },
     public: false,
   }];

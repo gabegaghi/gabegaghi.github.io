@@ -1,18 +1,18 @@
 const skills = {
     advanced: {
         langs: ['TypeScript', 'JavaScript', 'CSS', 'HTML'],
-        libs: ['React', 'Node.js'],
+        libs: ['React'],
         dbm: ['GraphQL'],
-        tools: ['VS Code', 'Git']
+        tools: ['VS Code', 'Android Studio', 'Git']
     },
     moderate: {
-        langs: ['Python', 'C', 'Java', 'Bash'],
-        tools: ['Jira', 'Docker']
+        langs: ['Kotlin', 'Python', 'C', 'Java', 'Bash'],
+        tools: ['Jira', 'Figma', 'Node.js']
     },
     familiar: {
-        libs: ['Express', 'jQuery'],
+        libs: ['Express.js', 'jQuery'],
         dbm: ['MySQL', 'MongoDB', 'PostgreSQL'],
-        tools: ['GitHub Actions', 'Figma']
+        tools: ['GitHub Actions', 'Docker']
     }
 } 
 

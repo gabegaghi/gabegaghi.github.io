@@ -31,7 +31,7 @@ function App() {
         <div className='availability'>
           <p className='availability-text'>
             <box-icon class='location-icon' size='21px' name='map' type='solid' color='#f03333' />
-            <span id='popup'>Available full-time for remote opportunities or in-person in <Hover standard='Tkaronto' hover='Toronto'/>.</span>
+            <span id='popup'>Available full-time for remote opportunities or in-person in <Hover standard='Brasil' hover='Brazil'/>.</span>
           </p>
         </div>
         <Routes>
